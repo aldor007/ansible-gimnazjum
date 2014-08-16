@@ -1,0 +1,1907 @@
+---
+groups_to_add:
+- {name: uczniowie}
+- {name: nauczyciele}
+- {name: grupa_A}
+- {name: grupa_B}
+- {name: grupa_C}
+- {name: grupa_D}
+- {name: grupa_E}
+- {name: grupa_F}
+- {name: grupa_G}
+- {name: grupa_H}
+- {name: grupa_I}
+- {name: grupa_J}
+- {name: grupa_K}
+- {name: grupa_L}
+- {name: grupa_M}
+- {name: grupa_N}
+- {name: grupa_O}
+users:
+- name: jan
+  home: /home/jan
+  groups: [uczniowie, nauczyciele, adm, sudo, plugdev]
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+  shell: /bin/bash
+
+- name: ania
+  home: /home/ania
+  groups: [uczniowie, nauczyciele]
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+  shell: /bin/bash
+
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A01
+  move_home: yes
+  name: grupa_A01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A02
+  move_home: yes
+  name: grupa_A02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A03
+  move_home: yes
+  name: grupa_A03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A04
+  move_home: yes
+  name: grupa_A04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A05
+  move_home: yes
+  name: grupa_A05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A06
+  move_home: yes
+  name: grupa_A06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A07
+  move_home: yes
+  name: grupa_A07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A08
+  move_home: yes
+  name: grupa_A08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A09
+  move_home: yes
+  name: grupa_A09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A10
+  move_home: yes
+  name: grupa_A10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A11
+  move_home: yes
+  name: grupa_A11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A12
+  move_home: yes
+  name: grupa_A12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A13
+  move_home: yes
+  name: grupa_A13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A14
+  move_home: yes
+  name: grupa_A14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A15
+  move_home: yes
+  name: grupa_A15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A16
+  move_home: yes
+  name: grupa_A16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A17
+  move_home: yes
+  name: grupa_A17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A18
+  move_home: yes
+  name: grupa_A18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A19
+  move_home: yes
+  name: grupa_A19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A20
+  move_home: yes
+  name: grupa_A20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A21
+  move_home: yes
+  name: grupa_A21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A22
+  move_home: yes
+  name: grupa_A22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A23
+  move_home: yes
+  name: grupa_A23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A24
+  move_home: yes
+  name: grupa_A24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_A, uczniowie]
+  home: /home/grupa_A/grupa_A25
+  move_home: yes
+  name: grupa_A25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B01
+  move_home: yes
+  name: grupa_B01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B02
+  move_home: yes
+  name: grupa_B02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B03
+  move_home: yes
+  name: grupa_B03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B04
+  move_home: yes
+  name: grupa_B04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B05
+  move_home: yes
+  name: grupa_B05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B06
+  move_home: yes
+  name: grupa_B06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B07
+  move_home: yes
+  name: grupa_B07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B08
+  move_home: yes
+  name: grupa_B08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B09
+  move_home: yes
+  name: grupa_B09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B10
+  move_home: yes
+  name: grupa_B10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B11
+  move_home: yes
+  name: grupa_B11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B12
+  move_home: yes
+  name: grupa_B12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B13
+  move_home: yes
+  name: grupa_B13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B14
+  move_home: yes
+  name: grupa_B14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B15
+  move_home: yes
+  name: grupa_B15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B16
+  move_home: yes
+  name: grupa_B16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B17
+  move_home: yes
+  name: grupa_B17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B18
+  move_home: yes
+  name: grupa_B18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B19
+  move_home: yes
+  name: grupa_B19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B20
+  move_home: yes
+  name: grupa_B20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B21
+  move_home: yes
+  name: grupa_B21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B22
+  move_home: yes
+  name: grupa_B22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B23
+  move_home: yes
+  name: grupa_B23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B24
+  move_home: yes
+  name: grupa_B24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_B, uczniowie]
+  home: /home/grupa_B/grupa_B25
+  move_home: yes
+  name: grupa_B25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C01
+  move_home: yes
+  name: grupa_C01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C02
+  move_home: yes
+  name: grupa_C02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C03
+  move_home: yes
+  name: grupa_C03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C04
+  move_home: yes
+  name: grupa_C04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C05
+  move_home: yes
+  name: grupa_C05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C06
+  move_home: yes
+  name: grupa_C06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C07
+  move_home: yes
+  name: grupa_C07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C08
+  move_home: yes
+  name: grupa_C08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C09
+  move_home: yes
+  name: grupa_C09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C10
+  move_home: yes
+  name: grupa_C10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C11
+  move_home: yes
+  name: grupa_C11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C12
+  move_home: yes
+  name: grupa_C12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C13
+  move_home: yes
+  name: grupa_C13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C14
+  move_home: yes
+  name: grupa_C14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C15
+  move_home: yes
+  name: grupa_C15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C16
+  move_home: yes
+  name: grupa_C16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C17
+  move_home: yes
+  name: grupa_C17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C18
+  move_home: yes
+  name: grupa_C18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C19
+  move_home: yes
+  name: grupa_C19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C20
+  move_home: yes
+  name: grupa_C20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C21
+  move_home: yes
+  name: grupa_C21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C22
+  move_home: yes
+  name: grupa_C22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C23
+  move_home: yes
+  name: grupa_C23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C24
+  move_home: yes
+  name: grupa_C24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_C, uczniowie]
+  home: /home/grupa_C/grupa_C25
+  move_home: yes
+  name: grupa_C25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D01
+  move_home: yes
+  name: grupa_D01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D02
+  move_home: yes
+  name: grupa_D02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D03
+  move_home: yes
+  name: grupa_D03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D04
+  move_home: yes
+  name: grupa_D04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D05
+  move_home: yes
+  name: grupa_D05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D06
+  move_home: yes
+  name: grupa_D06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D07
+  move_home: yes
+  name: grupa_D07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D08
+  move_home: yes
+  name: grupa_D08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D09
+  move_home: yes
+  name: grupa_D09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D10
+  move_home: yes
+  name: grupa_D10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D11
+  move_home: yes
+  name: grupa_D11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D12
+  move_home: yes
+  name: grupa_D12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D13
+  move_home: yes
+  name: grupa_D13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D14
+  move_home: yes
+  name: grupa_D14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D15
+  move_home: yes
+  name: grupa_D15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D16
+  move_home: yes
+  name: grupa_D16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D17
+  move_home: yes
+  name: grupa_D17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D18
+  move_home: yes
+  name: grupa_D18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D19
+  move_home: yes
+  name: grupa_D19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D20
+  move_home: yes
+  name: grupa_D20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D21
+  move_home: yes
+  name: grupa_D21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D22
+  move_home: yes
+  name: grupa_D22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D23
+  move_home: yes
+  name: grupa_D23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D24
+  move_home: yes
+  name: grupa_D24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_D, uczniowie]
+  home: /home/grupa_D/grupa_D25
+  move_home: yes
+  name: grupa_D25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E01
+  move_home: yes
+  name: grupa_E01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E02
+  move_home: yes
+  name: grupa_E02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E03
+  move_home: yes
+  name: grupa_E03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E04
+  move_home: yes
+  name: grupa_E04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E05
+  move_home: yes
+  name: grupa_E05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E06
+  move_home: yes
+  name: grupa_E06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E07
+  move_home: yes
+  name: grupa_E07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E08
+  move_home: yes
+  name: grupa_E08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E09
+  move_home: yes
+  name: grupa_E09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E10
+  move_home: yes
+  name: grupa_E10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E11
+  move_home: yes
+  name: grupa_E11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E12
+  move_home: yes
+  name: grupa_E12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E13
+  move_home: yes
+  name: grupa_E13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E14
+  move_home: yes
+  name: grupa_E14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E15
+  move_home: yes
+  name: grupa_E15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E16
+  move_home: yes
+  name: grupa_E16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E17
+  move_home: yes
+  name: grupa_E17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E18
+  move_home: yes
+  name: grupa_E18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E19
+  move_home: yes
+  name: grupa_E19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E20
+  move_home: yes
+  name: grupa_E20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E21
+  move_home: yes
+  name: grupa_E21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E22
+  move_home: yes
+  name: grupa_E22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E23
+  move_home: yes
+  name: grupa_E23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E24
+  move_home: yes
+  name: grupa_E24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_E, uczniowie]
+  home: /home/grupa_E/grupa_E25
+  move_home: yes
+  name: grupa_E25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F01
+  move_home: yes
+  name: grupa_F01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F02
+  move_home: yes
+  name: grupa_F02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F03
+  move_home: yes
+  name: grupa_F03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F04
+  move_home: yes
+  name: grupa_F04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F05
+  move_home: yes
+  name: grupa_F05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F06
+  move_home: yes
+  name: grupa_F06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F07
+  move_home: yes
+  name: grupa_F07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F08
+  move_home: yes
+  name: grupa_F08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F09
+  move_home: yes
+  name: grupa_F09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F10
+  move_home: yes
+  name: grupa_F10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F11
+  move_home: yes
+  name: grupa_F11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F12
+  move_home: yes
+  name: grupa_F12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F13
+  move_home: yes
+  name: grupa_F13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F14
+  move_home: yes
+  name: grupa_F14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F15
+  move_home: yes
+  name: grupa_F15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F16
+  move_home: yes
+  name: grupa_F16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F17
+  move_home: yes
+  name: grupa_F17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F18
+  move_home: yes
+  name: grupa_F18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F19
+  move_home: yes
+  name: grupa_F19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F20
+  move_home: yes
+  name: grupa_F20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F21
+  move_home: yes
+  name: grupa_F21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F22
+  move_home: yes
+  name: grupa_F22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F23
+  move_home: yes
+  name: grupa_F23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F24
+  move_home: yes
+  name: grupa_F24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_F, uczniowie]
+  home: /home/grupa_F/grupa_F25
+  move_home: yes
+  name: grupa_F25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G01
+  move_home: yes
+  name: grupa_G01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G02
+  move_home: yes
+  name: grupa_G02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G03
+  move_home: yes
+  name: grupa_G03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G04
+  move_home: yes
+  name: grupa_G04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G05
+  move_home: yes
+  name: grupa_G05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G06
+  move_home: yes
+  name: grupa_G06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G07
+  move_home: yes
+  name: grupa_G07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G08
+  move_home: yes
+  name: grupa_G08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G09
+  move_home: yes
+  name: grupa_G09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G10
+  move_home: yes
+  name: grupa_G10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G11
+  move_home: yes
+  name: grupa_G11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G12
+  move_home: yes
+  name: grupa_G12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G13
+  move_home: yes
+  name: grupa_G13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G14
+  move_home: yes
+  name: grupa_G14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G15
+  move_home: yes
+  name: grupa_G15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G16
+  move_home: yes
+  name: grupa_G16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G17
+  move_home: yes
+  name: grupa_G17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G18
+  move_home: yes
+  name: grupa_G18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G19
+  move_home: yes
+  name: grupa_G19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G20
+  move_home: yes
+  name: grupa_G20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G21
+  move_home: yes
+  name: grupa_G21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G22
+  move_home: yes
+  name: grupa_G22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G23
+  move_home: yes
+  name: grupa_G23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G24
+  move_home: yes
+  name: grupa_G24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_G, uczniowie]
+  home: /home/grupa_G/grupa_G25
+  move_home: yes
+  name: grupa_G25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H01
+  move_home: yes
+  name: grupa_H01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H02
+  move_home: yes
+  name: grupa_H02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H03
+  move_home: yes
+  name: grupa_H03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H04
+  move_home: yes
+  name: grupa_H04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H05
+  move_home: yes
+  name: grupa_H05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H06
+  move_home: yes
+  name: grupa_H06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H07
+  move_home: yes
+  name: grupa_H07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H08
+  move_home: yes
+  name: grupa_H08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H09
+  move_home: yes
+  name: grupa_H09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H10
+  move_home: yes
+  name: grupa_H10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H11
+  move_home: yes
+  name: grupa_H11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H12
+  move_home: yes
+  name: grupa_H12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H13
+  move_home: yes
+  name: grupa_H13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H14
+  move_home: yes
+  name: grupa_H14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H15
+  move_home: yes
+  name: grupa_H15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H16
+  move_home: yes
+  name: grupa_H16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H17
+  move_home: yes
+  name: grupa_H17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H18
+  move_home: yes
+  name: grupa_H18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H19
+  move_home: yes
+  name: grupa_H19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H20
+  move_home: yes
+  name: grupa_H20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H21
+  move_home: yes
+  name: grupa_H21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H22
+  move_home: yes
+  name: grupa_H22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H23
+  move_home: yes
+  name: grupa_H23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H24
+  move_home: yes
+  name: grupa_H24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_H, uczniowie]
+  home: /home/grupa_H/grupa_H25
+  move_home: yes
+  name: grupa_H25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I01
+  move_home: yes
+  name: grupa_I01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I02
+  move_home: yes
+  name: grupa_I02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I03
+  move_home: yes
+  name: grupa_I03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I04
+  move_home: yes
+  name: grupa_I04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I05
+  move_home: yes
+  name: grupa_I05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I06
+  move_home: yes
+  name: grupa_I06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I07
+  move_home: yes
+  name: grupa_I07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I08
+  move_home: yes
+  name: grupa_I08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I09
+  move_home: yes
+  name: grupa_I09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I10
+  move_home: yes
+  name: grupa_I10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I11
+  move_home: yes
+  name: grupa_I11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I12
+  move_home: yes
+  name: grupa_I12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I13
+  move_home: yes
+  name: grupa_I13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I14
+  move_home: yes
+  name: grupa_I14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I15
+  move_home: yes
+  name: grupa_I15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I16
+  move_home: yes
+  name: grupa_I16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I17
+  move_home: yes
+  name: grupa_I17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I18
+  move_home: yes
+  name: grupa_I18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I19
+  move_home: yes
+  name: grupa_I19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I20
+  move_home: yes
+  name: grupa_I20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I21
+  move_home: yes
+  name: grupa_I21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I22
+  move_home: yes
+  name: grupa_I22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I23
+  move_home: yes
+  name: grupa_I23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I24
+  move_home: yes
+  name: grupa_I24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_I, uczniowie]
+  home: /home/grupa_I/grupa_I25
+  move_home: yes
+  name: grupa_I25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J01
+  move_home: yes
+  name: grupa_J01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J02
+  move_home: yes
+  name: grupa_J02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J03
+  move_home: yes
+  name: grupa_J03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J04
+  move_home: yes
+  name: grupa_J04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J05
+  move_home: yes
+  name: grupa_J05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J06
+  move_home: yes
+  name: grupa_J06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J07
+  move_home: yes
+  name: grupa_J07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J08
+  move_home: yes
+  name: grupa_J08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J09
+  move_home: yes
+  name: grupa_J09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J10
+  move_home: yes
+  name: grupa_J10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J11
+  move_home: yes
+  name: grupa_J11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J12
+  move_home: yes
+  name: grupa_J12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J13
+  move_home: yes
+  name: grupa_J13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J14
+  move_home: yes
+  name: grupa_J14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J15
+  move_home: yes
+  name: grupa_J15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J16
+  move_home: yes
+  name: grupa_J16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J17
+  move_home: yes
+  name: grupa_J17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J18
+  move_home: yes
+  name: grupa_J18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J19
+  move_home: yes
+  name: grupa_J19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J20
+  move_home: yes
+  name: grupa_J20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J21
+  move_home: yes
+  name: grupa_J21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J22
+  move_home: yes
+  name: grupa_J22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J23
+  move_home: yes
+  name: grupa_J23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J24
+  move_home: yes
+  name: grupa_J24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_J, uczniowie]
+  home: /home/grupa_J/grupa_J25
+  move_home: yes
+  name: grupa_J25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K01
+  move_home: yes
+  name: grupa_K01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K02
+  move_home: yes
+  name: grupa_K02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K03
+  move_home: yes
+  name: grupa_K03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K04
+  move_home: yes
+  name: grupa_K04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K05
+  move_home: yes
+  name: grupa_K05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K06
+  move_home: yes
+  name: grupa_K06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K07
+  move_home: yes
+  name: grupa_K07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K08
+  move_home: yes
+  name: grupa_K08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K09
+  move_home: yes
+  name: grupa_K09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K10
+  move_home: yes
+  name: grupa_K10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K11
+  move_home: yes
+  name: grupa_K11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K12
+  move_home: yes
+  name: grupa_K12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K13
+  move_home: yes
+  name: grupa_K13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K14
+  move_home: yes
+  name: grupa_K14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K15
+  move_home: yes
+  name: grupa_K15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K16
+  move_home: yes
+  name: grupa_K16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K17
+  move_home: yes
+  name: grupa_K17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K18
+  move_home: yes
+  name: grupa_K18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K19
+  move_home: yes
+  name: grupa_K19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K20
+  move_home: yes
+  name: grupa_K20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K21
+  move_home: yes
+  name: grupa_K21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K22
+  move_home: yes
+  name: grupa_K22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K23
+  move_home: yes
+  name: grupa_K23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K24
+  move_home: yes
+  name: grupa_K24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_K, uczniowie]
+  home: /home/grupa_K/grupa_K25
+  move_home: yes
+  name: grupa_K25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L01
+  move_home: yes
+  name: grupa_L01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L02
+  move_home: yes
+  name: grupa_L02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L03
+  move_home: yes
+  name: grupa_L03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L04
+  move_home: yes
+  name: grupa_L04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L05
+  move_home: yes
+  name: grupa_L05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L06
+  move_home: yes
+  name: grupa_L06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L07
+  move_home: yes
+  name: grupa_L07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L08
+  move_home: yes
+  name: grupa_L08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L09
+  move_home: yes
+  name: grupa_L09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L10
+  move_home: yes
+  name: grupa_L10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L11
+  move_home: yes
+  name: grupa_L11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L12
+  move_home: yes
+  name: grupa_L12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L13
+  move_home: yes
+  name: grupa_L13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L14
+  move_home: yes
+  name: grupa_L14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L15
+  move_home: yes
+  name: grupa_L15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L16
+  move_home: yes
+  name: grupa_L16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L17
+  move_home: yes
+  name: grupa_L17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L18
+  move_home: yes
+  name: grupa_L18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L19
+  move_home: yes
+  name: grupa_L19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L20
+  move_home: yes
+  name: grupa_L20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L21
+  move_home: yes
+  name: grupa_L21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L22
+  move_home: yes
+  name: grupa_L22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L23
+  move_home: yes
+  name: grupa_L23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L24
+  move_home: yes
+  name: grupa_L24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_L, uczniowie]
+  home: /home/grupa_L/grupa_L25
+  move_home: yes
+  name: grupa_L25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M01
+  move_home: yes
+  name: grupa_M01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M02
+  move_home: yes
+  name: grupa_M02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M03
+  move_home: yes
+  name: grupa_M03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M04
+  move_home: yes
+  name: grupa_M04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M05
+  move_home: yes
+  name: grupa_M05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M06
+  move_home: yes
+  name: grupa_M06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M07
+  move_home: yes
+  name: grupa_M07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M08
+  move_home: yes
+  name: grupa_M08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M09
+  move_home: yes
+  name: grupa_M09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M10
+  move_home: yes
+  name: grupa_M10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M11
+  move_home: yes
+  name: grupa_M11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M12
+  move_home: yes
+  name: grupa_M12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M13
+  move_home: yes
+  name: grupa_M13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M14
+  move_home: yes
+  name: grupa_M14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M15
+  move_home: yes
+  name: grupa_M15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M16
+  move_home: yes
+  name: grupa_M16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M17
+  move_home: yes
+  name: grupa_M17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M18
+  move_home: yes
+  name: grupa_M18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M19
+  move_home: yes
+  name: grupa_M19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M20
+  move_home: yes
+  name: grupa_M20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M21
+  move_home: yes
+  name: grupa_M21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M22
+  move_home: yes
+  name: grupa_M22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M23
+  move_home: yes
+  name: grupa_M23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M24
+  move_home: yes
+  name: grupa_M24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_M, uczniowie]
+  home: /home/grupa_M/grupa_M25
+  move_home: yes
+  name: grupa_M25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N01
+  move_home: yes
+  name: grupa_N01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N02
+  move_home: yes
+  name: grupa_N02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N03
+  move_home: yes
+  name: grupa_N03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N04
+  move_home: yes
+  name: grupa_N04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N05
+  move_home: yes
+  name: grupa_N05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N06
+  move_home: yes
+  name: grupa_N06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N07
+  move_home: yes
+  name: grupa_N07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N08
+  move_home: yes
+  name: grupa_N08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N09
+  move_home: yes
+  name: grupa_N09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N10
+  move_home: yes
+  name: grupa_N10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N11
+  move_home: yes
+  name: grupa_N11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N12
+  move_home: yes
+  name: grupa_N12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N13
+  move_home: yes
+  name: grupa_N13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N14
+  move_home: yes
+  name: grupa_N14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N15
+  move_home: yes
+  name: grupa_N15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N16
+  move_home: yes
+  name: grupa_N16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N17
+  move_home: yes
+  name: grupa_N17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N18
+  move_home: yes
+  name: grupa_N18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N19
+  move_home: yes
+  name: grupa_N19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N20
+  move_home: yes
+  name: grupa_N20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N21
+  move_home: yes
+  name: grupa_N21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N22
+  move_home: yes
+  name: grupa_N22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N23
+  move_home: yes
+  name: grupa_N23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N24
+  move_home: yes
+  name: grupa_N24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_N, uczniowie]
+  home: /home/grupa_N/grupa_N25
+  move_home: yes
+  name: grupa_N25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O01
+  move_home: yes
+  name: grupa_O01
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O02
+  move_home: yes
+  name: grupa_O02
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O03
+  move_home: yes
+  name: grupa_O03
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O04
+  move_home: yes
+  name: grupa_O04
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O05
+  move_home: yes
+  name: grupa_O05
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O06
+  move_home: yes
+  name: grupa_O06
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O07
+  move_home: yes
+  name: grupa_O07
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O08
+  move_home: yes
+  name: grupa_O08
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O09
+  move_home: yes
+  name: grupa_O09
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O10
+  move_home: yes
+  name: grupa_O10
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O11
+  move_home: yes
+  name: grupa_O11
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O12
+  move_home: yes
+  name: grupa_O12
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O13
+  move_home: yes
+  name: grupa_O13
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O14
+  move_home: yes
+  name: grupa_O14
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O15
+  move_home: yes
+  name: grupa_O15
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O16
+  move_home: yes
+  name: grupa_O16
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O17
+  move_home: yes
+  name: grupa_O17
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O18
+  move_home: yes
+  name: grupa_O18
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O19
+  move_home: yes
+  name: grupa_O19
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O20
+  move_home: yes
+  name: grupa_O20
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O21
+  move_home: yes
+  name: grupa_O21
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O22
+  move_home: yes
+  name: grupa_O22
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O23
+  move_home: yes
+  name: grupa_O23
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O24
+  move_home: yes
+  name: grupa_O24
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1
+- groups: [grupa_O, uczniowie]
+  home: /home/grupa_O/grupa_O25
+  move_home: yes
+  name: grupa_O25
+  password: $6$rounds=100000$AWlTwbFDBNo49QRF$5GTYRPh75Xj9GcBacsHcNLJTNgP2b.kWit2FLI9ej3vjJuSwQWDreMizOdfZxDpKrAZ.GqYNwfVQtcunJOn1B1

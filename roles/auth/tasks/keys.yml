@@ -1,0 +1,9 @@
+# file: roles/auth/tasks/keys.yml
+
+- name: Auth | SSH authorized key setup
+  authorized_key:
+        user="{{ item.0.user }}"
+        key="{{ item.1}}"
+  with_subelements:
+    - users_keys
+    - keys

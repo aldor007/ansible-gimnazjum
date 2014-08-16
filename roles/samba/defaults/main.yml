@@ -1,0 +1,28 @@
+samba:
+    name: 'Stoick'
+    workgroup: 'Domek'
+    comment: 'Stoick the Vast media'
+    group: smbshare
+    shares:
+        - name: Filmy
+          path: /media/hdd/Filmy
+          read_only: no
+          browseable: yes
+          guest_ok: yes
+        - name: DaneWspoldzielone
+          path: /media/hdd/DaneWspoldzielone
+          read_only: no
+          browseable: yes
+          guest_ok: yes
+        - name: Downloads
+          comment: aria download
+          path: /media/hdd/downloads
+          read_only: yes
+          browseable: yes
+          guest_ok: yes
+          group: root
+        - name: tmp
+          path: /media/hdd/tmp
+          read_only: no
+          browseable: yes
+          guest_ok: yes

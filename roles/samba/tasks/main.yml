@@ -1,0 +1,29 @@
+---
+
+- name: samba is installed
+  apt:  pkg=samba state=installed
+  tags: samba
+
+- name: fileserver prace
+  file: path=/home/prace state=directory mode=0755 owner=root group=root
+  tags: samba
+
+# - name: samba share groups
+#   group: name={{ item.group }} state=present
+#   with_items: samba.shares
+#   tags: samba
+#
+# - name: ensure smbpassword is set
+#   raw:  (echo {{ item.smbpasswd }}; echo {{ item.smbpasswd }}) | smbpasswd -s -a {{ item.name }}
+#   with_items: samba.users
+#   tags: samba
+- name: samba share folders
+  file: path="{{ item.path }}" state=directory mode=2770 owner={{ item.owner | default('nobody') }} group={{ item.group | default('nogroup')}}
+  with_items: samba.shares
+  tags: samba
+
+- name: samba config
+  template: src=smb.conf.j2 dest=/etc/samba/smb.conf owner=root group=root mode=0644
+  notify:
+    - restart samba
+  tags: samba

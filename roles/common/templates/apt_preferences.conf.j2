@@ -1,0 +1,26 @@
+Explanation: Uninstall or do not install any Debian-originated
+Explanation: package versions other than those in the stable distro
+Package: *
+Pin: release  a=stable
+Pin-Priority: 900
+ 
+Package: *
+Pin: release a=wheezy-backports
+Pin-Priority: 650
+ 
+ 
+Package: *
+Pin: release  a=jessi
+Pin-Priority: 300
+ 
+Package: *
+Pin: release a=sid
+Pin-Priority: 600
+ 
+Package: *
+Pin: release  a=testing
+Pin-Priority: 600
+ 
+Package: *
+Pin: release a=unstable
+Pin-Priority: 100

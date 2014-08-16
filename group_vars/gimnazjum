@@ -1,0 +1,74 @@
+---
+network_ether_interfaces:
+    - device: eth0
+      type: ethernet
+      bootproto: dhcp
+    - device: eth1
+      type: ethernet
+      bootproto: static
+      hostname: serwer
+      address: 192.168.10.1
+      netmask: 255.255.255.0
+      broadcast: 192.168.10.255
+      gateway: 192.168.0.1
+
+samba:
+    name: 'sala37'
+    workgroup: 'gimnazjum'
+    comment: 'serwer sala37'
+    domains: yes
+    wins: yes
+    group: smbshare
+    shares:
+    - name: Dane
+      read_only: yes
+      browseable: yes
+      write_list: +nauczyciele
+      group: uczniowie
+      valid_users: +uczniowie +nauczyciele
+      path: /home/dane
+    - {browseable: 'yes', comment: pliki grupa_A, group: grupa_A, guest_ok: 'no', name: grupa_A,
+      onwer: grupa_A, path: /home/prace/grupa_A, valid_users: +nauczyciele +grupa_A, write_list: +nauczyciele
+        +grupa_A}
+    - {browseable: 'yes', comment: pliki grupa_B, group: grupa_B, guest_ok: 'no', name: grupa_B,
+      onwer: grupa_B, path: /home/prace/grupa_B, valid_users: +nauczyciele +grupa_B, write_list: +nauczyciele
+        +grupa_B}
+    - {browseable: 'yes', comment: pliki grupa_C, group: grupa_C, guest_ok: 'no', name: grupa_C,
+      onwer: grupa_C, path: /home/prace/grupa_C, valid_users: +nauczyciele +grupa_C, write_list: +nauczyciele
+        +grupa_C}
+    - {browseable: 'yes', comment: pliki grupa_D, group: grupa_D, guest_ok: 'no', name: grupa_D,
+      onwer: grupa_D, path: /home/prace/grupa_D, valid_users: +nauczyciele +grupa_D, write_list: +nauczyciele
+        +grupa_D}
+    - {browseable: 'yes', comment: pliki grupa_E, group: grupa_E, guest_ok: 'no', name: grupa_E,
+      onwer: grupa_E, path: /home/prace/grupa_E, valid_users: +nauczyciele +grupa_E, write_list: +nauczyciele
+        +grupa_E}
+    - {browseable: 'yes', comment: pliki grupa_F, group: grupa_F, guest_ok: 'no', name: grupa_F,
+      onwer: grupa_F, path: /home/prace/grupa_F, valid_users: +nauczyciele +grupa_F, write_list: +nauczyciele
+        +grupa_F}
+    - {browseable: 'yes', comment: pliki grupa_G, group: grupa_G, guest_ok: 'no', name: grupa_G,
+      onwer: grupa_G, path: /home/prace/grupa_G, valid_users: +nauczyciele +grupa_G, write_list: +nauczyciele
+        +grupa_G}
+    - {browseable: 'yes', comment: pliki grupa_H, group: grupa_H, guest_ok: 'no', name: grupa_H,
+      onwer: grupa_H, path: /home/prace/grupa_H, valid_users: +nauczyciele +grupa_H, write_list: +nauczyciele
+        +grupa_H}
+    - {browseable: 'yes', comment: pliki grupa_I, group: grupa_I, guest_ok: 'no', name: grupa_I,
+      onwer: grupa_I, path: /home/prace/grupa_I, valid_users: +nauczyciele +grupa_I, write_list: +nauczyciele
+        +grupa_I}
+    - {browseable: 'yes', comment: pliki grupa_J, group: grupa_J, guest_ok: 'no', name: grupa_J,
+      onwer: grupa_J, path: /home/prace/grupa_J, valid_users: +nauczyciele +grupa_J, write_list: +nauczyciele
+        +grupa_J}
+    - {browseable: 'yes', comment: pliki grupa_K, group: grupa_K, guest_ok: 'no', name: grupa_K,
+      onwer: grupa_K, path: /home/prace/grupa_K, valid_users: +nauczyciele +grupa_K, write_list: +nauczyciele
+        +grupa_K}
+    - {browseable: 'yes', comment: pliki grupa_L, group: grupa_L, guest_ok: 'no', name: grupa_L,
+      onwer: grupa_L, path: /home/prace/grupa_L, valid_users: +nauczyciele +grupa_L, write_list: +nauczyciele
+        +grupa_L}
+    - {browseable: 'yes', comment: pliki grupa_M, group: grupa_M, guest_ok: 'no', name: grupa_M,
+      onwer: grupa_M, path: /home/prace/grupa_M, valid_users: +nauczyciele +grupa_M, write_list: +nauczyciele
+        +grupa_M}
+    - {browseable: 'yes', comment: pliki grupa_N, group: grupa_N, guest_ok: 'no', name: grupa_N,
+      onwer: grupa_N, path: /home/prace/grupa_N, valid_users: +nauczyciele +grupa_N, write_list: +nauczyciele
+        +grupa_N}
+    - {browseable: 'yes', comment: pliki grupa_O, group: grupa_O, guest_ok: 'no', name: grupa_O,
+      onwer: grupa_O, path: /home/prace/grupa_O, valid_users: +nauczyciele +grupa_O, write_list: +nauczyciele
+        +grupa_O}

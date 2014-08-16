@@ -1,0 +1,13 @@
+- name: Nginx DEBUG MSG
+  debug: msg={{ groups_to_add }}
+
+- name: "Auth | Make sure the group are presents {{ groups }}"
+  group: name={{ item.name }} state=present
+  with_items: groups_to_add
+  when: groups_to_add is defined
+
+- name: Create groups  folders
+  file: path="/home/{{ item.name }}" state=directory mode=2750 owner=root group={{ item.name | default('nogroup')}}
+  with_items: groups_to_add
+  when: groups_to_add is defined
+

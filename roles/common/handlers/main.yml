@@ -1,0 +1,5 @@
+# file: roles/common/handlers/pdns.yml
+
+- name: restart diamond
+  action: service name=diamond state=restarted enabled=yes
+  sudo: yes

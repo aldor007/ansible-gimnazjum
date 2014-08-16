@@ -1,0 +1,30 @@
+# file: roles/auth/tasks/main.yml
+
+# - include: groups.yml
+# - include: users.yml
+
+- name: set acls for nauczyciele
+  acl: name=/home/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present default=yes
+  with_items: groups_to_add
+  ignore_errors: yes
+
+- name: set acls for grups prace
+  acl: name=/home/prace/{{ item.name}} entity={{ item.name }} etype=group permissions=rwx state=present
+  with_items: groups_to_add
+  ignore_errors: yes
+
+- name: set acls for grups prace only x
+  acl: name=/home/prace/{{ item.name}}  etype=group  permissions=x state=present default=yes
+  with_items: groups_to_add
+  ignore_errors: yes
+
+- name: set acls for nauczyciele prace rwx default
+  acl: name=/home/prace/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present default=yes
+  with_items: groups_to_add
+  ignore_errors: yes
+
+- name: set acls for nauczyciele prace rwx not defaul
+  acl: name=/home/prace/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present
+  with_items: groups_to_add
+  ignore_errors: yes
+

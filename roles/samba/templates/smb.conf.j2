@@ -1,0 +1,146 @@
+
+[global]
+
+  netbios name  = {{ samba.name }}
+  workgroup     = {{ samba.workgroup }}
+  server string = {{ samba.comment }}
+
+# Network
+
+
+# Name Resolution
+
+  os level         = 15    # Beat everything except NT/2000 servers.
+  #  local master     = yes */
+ dns proxy = no
+
+  {% if samba.interfaces is defined %}
+    interfaces           = {{ samba.interfaces }}
+    bind interfaces only = yes
+  {% endif %}
+
+  {% if samba.broadcast is defined %}
+    remote browse sync = {{ samba.broadcast }}
+    remote announce    = {{ samba.broadcast }}
+  {% endif %}
+
+  {% if samba.wins is defined %}
+    domain master        = yes
+    preferred master     = yes
+    wins support         = yes
+    name resolve order   = wins hosts bcast
+  {% else %}
+    name resolve order   = bcast hosts
+  {% endif %}
+
+# Logging
+
+  log file = /var/log/samba.log
+  max log size = 1000
+  syslog = 0
+
+# Authentication
+
+
+# You may wish to use password encryption.  See the section on
+# 'encrypt passwords' in the smb.conf(5) manpage before enabling.
+   encrypt passwords = true
+
+# If you are using encrypted passwords, Samba will need to know what
+# password database type you are using.  
+   passdb backend = tdbsam
+
+   obey pam restrictions = yes
+
+# This boolean parameter controls whether Samba attempts to sync the Unix
+# password with the SMB password when the encrypted SMB password in the
+# passdb is changed.
+   unix password sync = yes
+
+# For Unix password sync to work on a Debian GNU/Linux system, the following
+# parameters must be set (thanks to Ian Kahan <<kahan@informatik.tu-muenchen.de> for
+# sending the correct chat script for the passwd program in Debian Sarge).
+   passwd program = /usr/bin/passwd %u
+   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+
+# This boolean controls whether PAM will be used for password changes
+# when requested by an SMB client instead of the program listed in
+# 'passwd program'. The default is 'no'.
+   pam password change = yes
+
+# This option controls how unsuccessful authentication attempts are mapped
+# to anonymous connections
+   map to guest = bad user
+
+# Security
+
+  usershare allow guests = yes
+
+# Printing
+
+  load printers = no
+
+# Shares
+
+# Domains
+    {% if samba.domain is defined  %}
+        domain logons = yes
+        logon path = \\%N\profiles\%U
+        logon path = \\%N\%U\profile
+
+        logon drive = H:
+        logon home = \\%N\%U
+        local master = yes
+        domain master = yes
+        preferred master = yes
+        wins support = yes
+        wins proxy = yes
+        #os level = 35
+     add user script = /usr/sbin/adduser -m %u
+     delete user script = /usr/sbin/userdel -r %u 
+     add group script = /usr/sbin/groupadd  %g
+    delete group script = /usr/sbin/groupdel  %g
+    add user to group script = /usr/sbin/groupmod -A %u %g
+    delete user from group script = /usr/sbin/groupmod -R %u %g
+    # This allows machine accounts to be created on the domain controller via the 
+    # SAMR RPC pipe.  
+    # The following assumes a "machines" group exists on the system
+     add machine script  = /usr/sbin/useradd -s /bin/false -d /var/lib/nobody %u
+    {% endif %}
+
+{% for share in samba.shares %}
+
+[{{ share.name }}]
+  comment              = {{ share.name }}
+  path                 = {{ share.path }}
+  {% if share.valid_users is defined %}
+  valid users          = +root  {{ share.valid_users }}
+  {% endif  %}
+  {% if share.write_list is defined %}
+   write list = +root {{ share.write_list }}
+   {% endif %}
+  writable             = yes
+  hide dot files       = yes
+
+  create mask          = 0610
+  create mode          = 0710
+  force create mode    = 0710
+
+  directory mask       = 0770
+  directory mode       = 0770
+  force directory mode = 0770
+  inherit acls = yes
+  inherit owner = yes
+  inherit permissions = yes
+  map acl inherit = yes
+  {% if share.browseable is defined  %}
+  browseable           = {{ share.browseable }}
+  {% endif %}
+  {% if share.guest_ok is defined %}
+  guest ok           = {{ share.guest_ok }}
+  {% endif %}
+  {% if share.read_only is defined %}
+  read only           = {{ share.read_only}}
+  {% endif %}
+
+{% endfor %}

@@ -1,0 +1,18 @@
+# Apply common configuration to all hosts
+- hosts: all
+  roles:
+  - common
+  - tmpreaper
+  - ntp
+  - timezone
+
+- hosts: users
+  roles:
+  - auth
+
+- hosts: gimnazjum
+  roles:
+  - network
+  - dhcpd
+  - samba
+

@@ -1,0 +1,75 @@
+---
+# This role contains common plays that will run on all nodes.
+- name: install deps
+  apt: name={{ item }} state=present update_cache=yes default_release=wheezy
+  with_items:
+   - python
+   - python-dev
+   - python-pip
+   - python-apt
+   - python-utmp
+   - perl
+   - libperl-dev
+   - autoconf
+   - build-essential
+   - sudo
+   - supervisor
+  tags: python
+
+- name: Common | Make sure some basic tools are installed
+  apt: pkg={{ item }}
+  with_items:
+    - curl
+    - debconf
+    - htop
+    - iftop
+    - iotop
+    - sysstat
+    - tmux
+    - tshark
+    - dnsutils
+
+- name: Common | Make sure git is installed
+  apt: pkg=git
+
+
+# - name: add keys for debian repos
+#   apt_key: url={{ item }} state=present
+#   with_items:
+#    - "'http://www.dotdeb.org/dotdeb.gpg'"
+#- name: add debian repos
+#  apt_repository:  repo={{ item }} state=present
+#  with_items:
+#   - "'deb http://ftp.debian.org/debian wheezy-backports main contrib non-free'"
+#  - "'deb http://ftp.debian.org/debian jessie main contrib non-free'"
+
+# - name: remove debian repos
+#   apt_repository:  repo={{ item }} state=absent
+#   with_items:
+#    - "'deb http://packages.dotdeb.org wheezy main'"
+#    - "'deb-src http://packages.dotdeb.org wheezy main'"
+#    - "'deb http://packages.dotdeb.org wheezy all'"
+#    - "'deb-src http://packages.dotdeb.org wheezy all'"
+#   notify: apt update
+- name: Configure apt perference
+  template: src=apt_preferences.conf.j2 dest=/etc/apt/preferences
+  tags: apt
+
+- name: Install ntp
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+   - ntp
+   - ntpdate
+  tags: ntp
+
+- name: Install iptables-persistent
+  apt: name=iptables-persistent state=present
+
+# - name: Configure ntp file
+#   template: src=ntp.conf.j2 dest=/etc/ntp.conf
+#   tags: ntp
+#   notify: restart ntp
+# - name: insert iptables template
+#   template: src=iptables.j2 dest=/etc/iptables.rules
+#   notify: restart iptables
+

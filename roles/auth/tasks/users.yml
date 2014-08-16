@@ -1,0 +1,14 @@
+# file: roles/auth/tasks/users.yml
+
+- name: Auth | Make sure the users are present
+  user: name={{ item.name }}  password={{ item.password }} home={{item.home}} move_home={{item.move_home| default('no')}} shell={{item.shell| default('/bin/sh')}} groups={{ ",".join(item.groups) }}
+  with_items: users
+  when: users is defined
+
+- name: Create home folders
+  file: path="{{ item.home | default("/home/{{ item.name }}" ) }}" state=directory mode=2750 owner={{ item.name | default('nobody') }} group={{ item.name | default('nogroup')}}
+  with_items: users
+  when: users is defined
+
+
+
