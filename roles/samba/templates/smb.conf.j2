@@ -106,6 +106,39 @@
     # SAMR RPC pipe.  
     # The following assumes a "machines" group exists on the system
      add machine script  = /usr/sbin/useradd -s /bin/false -d /var/lib/nobody %u
+    #======================= Share Definitions =======================
+
+    [homes]
+       comment = Home Directories
+       browseable = yes
+
+       read only = no
+
+       create mask = 0777
+
+      directory mask = 0777
+
+      valid users = %S
+      inherit acls = yes
+      inherit owner = yes
+      inherit permissions = yes
+      map acl inherit = yes
+
+    [netlogon]
+       comment = Domain Logon
+       path = /var/lib/samba/netlogon
+       guest ok = yes
+       read only = yes
+     directory security mask = 0755 
+     browseable = no
+
+    [profiles]
+       comment = Users profiles
+       path = /var/lib/samba/profiles
+       guest ok = no
+       browseable = no
+       create mask = 0777
+       directory mask = 0777
     {% endif %}
 
 {% for share in samba.shares %}

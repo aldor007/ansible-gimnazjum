@@ -22,6 +22,12 @@
   with_items: samba.shares
   tags: samba
 
+- name: samba netlogon folder
+  file: path=/var/lib/samba/netlogon state=directory mode=0755 owner=nobody group=nogroup
+
+- name: samba netlogon file
+  copy: src=netlogon/logon.cmd dest=/var/lib/samba/netlogon/logon.cmd owner=nobody group=nogroup mode=766
+
 - name: samba config
   template: src=smb.conf.j2 dest=/etc/samba/smb.conf owner=root group=root mode=0644
   notify:

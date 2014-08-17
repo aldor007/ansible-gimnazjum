@@ -16,17 +16,18 @@ samba:
     name: 'sala37'
     workgroup: 'gimnazjum'
     comment: 'serwer sala37'
-    domains: yes
+    domain: yes
     wins: yes
     group: smbshare
     shares:
-    - name: Dane
+    - name: Informatyka
       read_only: yes
       browseable: yes
       write_list: +nauczyciele
       group: uczniowie
       valid_users: +uczniowie +nauczyciele
-      path: /home/dane
+      guest_ok: yes
+      path: /home/informatyka
     - {browseable: 'yes', comment: pliki grupa_A, group: grupa_A, guest_ok: 'no', name: grupa_A,
       onwer: grupa_A, path: /home/prace/grupa_A, valid_users: +nauczyciele +grupa_A, write_list: +nauczyciele
         +grupa_A}
