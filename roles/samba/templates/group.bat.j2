@@ -1,10 +1,10 @@
-net time \\SALA37 /set /yes
 net use x: \\SALA37\homes
 net use z: \\SALA37\informatyka
-net use y: \\SALA37\{{name}}
-{% if item.name == "nauczycile" %}
+
+{% if item.name == "nauczyciele" %}
 net use y: \\SALA37\prace
 net use q: \\SALA37\serwer_homes
 {%else %}
 net use y: \\SALA37\{{item.name}}
 {% endif %}
+

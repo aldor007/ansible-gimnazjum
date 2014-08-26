@@ -25,12 +25,24 @@
 - name: samba netlogon folder
   file: path=/var/lib/samba/netlogon state=directory mode=0777 owner=nobody group=nogroup
 
+- name: samba netlogon folder
+  file: path=/var/lib/samba/usershares state=directory mode=0777 owner=nobody group=nogroup
+
 - name: samba netlogon file
   copy: src=netlogon/ dest=/var/lib/samba/netlogon owner=nobody group=nogroup mode=777
 
 - name: samba netlogon groups
+  template: src=group.bat.j2 dest=/var/lib/samba/netlogon/{{item.name | tolower}}.bat owner=nobody group={{item.name}} mode=777
+  with_items: groups_to_add
+  ignore_errors: yes
+
+- name: samba netlogon groups
   template: src=group.bat.j2 dest=/var/lib/samba/netlogon/{{item.name}}.bat owner=nobody group={{item.name}} mode=777
-  with_items: samba.shares
+  with_items: groups_to_add
+  ignore_errors: yes
+  notify:
+    - restart samba
+  tags: samba
 
 - name: samba config
   template: src=smb.conf.j2 dest=/etc/samba/smb.conf owner=root group=root mode=0644
@@ -38,6 +50,11 @@
     - restart samba
   tags: samba
 
+- name: update netlogon
+  copy: src=netlogon.conf dest=/etc/samba/netlogon.conf
+  notify:
+    - restart samba
+  tags: samba
 
 - sysctl: name="net.ipv4.ip_forward" value=1 sysctl_set=yes state=present reload=yes
 

@@ -74,7 +74,7 @@
 
 # Security
 
-  usershare allow guests = yes
+  usershare allow guests = no
 
 # Printing
 
@@ -97,7 +97,7 @@
         wins support = yes
         wins proxy = yes
         #os level = 35
-        logon script=%G.bat
+        logon script=%g.bat
 
      add user script = /usr/sbin/adduser -m %u
      delete user script = /usr/sbin/userdel -r %u 
@@ -130,8 +130,7 @@
        comment = Domain Logon
        path = /var/lib/samba/netlogon
        guest ok = yes
-       read only = yes
-     directory security mask = 0755
+       writable = no
      browseable = no
 
     [profiles]
