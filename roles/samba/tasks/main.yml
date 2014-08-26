@@ -13,10 +13,10 @@
 #   with_items: samba.shares
 #   tags: samba
 #
-# - name: ensure smbpassword is set
-#   raw:  (echo {{ item.smbpasswd }}; echo {{ item.smbpasswd }}) | smbpasswd -s -a {{ item.name }}
-#   with_items: samba.users
-#   tags: samba
+- name: ensure smbpassword is set
+  raw:  (echo {{ item.smbpassword }}; echo {{ item.smbpassword }}) | smbpasswd -s -a {{ item.name }}
+  with_items: users_to_add
+  tags: samba
 - name: samba share folders
   file: path="{{ item.path }}" state=directory mode=2770 owner={{ item.owner | default('nobody') }} group={{ item.group | default('nogroup')}}
   with_items: samba.shares
@@ -33,3 +33,7 @@
   notify:
     - restart samba
   tags: samba
+
+
+- sysctl: name="net.ipv4.ip_forward" value=1 sysctl_set=yes state=present reload=yes
+

@@ -27,6 +27,8 @@ for group in groups:
         if i < 10:
             number = '0' + str(number)
         user['name'] = ''.join((group['name'], str(number)))
+        user['update_password'] = False
+        user['smbpassword'] = 'gimnazjum'
         user['groups'] = []
         user['groups'].append(group['name'])
         user['groups'].append('uczniowie')
