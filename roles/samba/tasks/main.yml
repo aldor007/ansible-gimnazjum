@@ -18,15 +18,19 @@
   with_items: users_to_add
   tags: samba
 - name: samba share folders
-  file: path="{{ item.path }}" state=directory mode=2770 owner={{ item.owner | default('nobody') }} group={{ item.group | default('nogroup')}}
+  file: path="{{ item.path }}" state=directory mode=0770 owner={{ item.owner | default('nobody') }} group={{ item.group | default('nogroup')}}
   with_items: samba.shares
   tags: samba
 
 - name: samba netlogon folder
-  file: path=/var/lib/samba/netlogon state=directory mode=0755 owner=nobody group=nogroup
+  file: path=/var/lib/samba/netlogon state=directory mode=0777 owner=nobody group=nogroup
 
 - name: samba netlogon file
-  copy: src=netlogon/logon.cmd dest=/var/lib/samba/netlogon/logon.cmd owner=nobody group=nogroup mode=766
+  copy: src=netlogon/ dest=/var/lib/samba/netlogon owner=nobody group=nogroup mode=777
+
+- name: samba netlogon groups
+  template: src=group.bat.j2 dest=/var/lib/samba/netlogon/{{item.name}}.bat owner=nobody group={{item.name}} mode=777
+  with_items: samba.shares
 
 - name: samba config
   template: src=smb.conf.j2 dest=/etc/samba/smb.conf owner=root group=root mode=0644
@@ -36,4 +40,10 @@
 
 
 - sysctl: name="net.ipv4.ip_forward" value=1 sysctl_set=yes state=present reload=yes
+
+- name: update rc.local, set iptables
+  copy: src=rc.local dest=/etc/rc.local
+
+- name: run rc.local
+  raw: /etc/rc.local
 

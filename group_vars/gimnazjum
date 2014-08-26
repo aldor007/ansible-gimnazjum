@@ -28,6 +28,11 @@ samba:
       valid_users: +uczniowie +nauczyciele +nogroup
       guest_ok: 'yes'
       path: /home/informatyka
+    - {browseable: 'yes', comment: serwer_homes, group: uczniowie, guest_ok: 'no', name: serwer_homes,
+      onwer: nauczyciele, path: /home/, valid_users: +nauczyciele,  write_list: +nauczyciele}
+    - {browseable: 'yes', comment: prace, group: uczniowie, guest_ok: 'no', name: prace,
+      onwer: uczniowie, path: /home/prace, valid_users: +nauczyciele +uczniowie, write_list: +nauczyciele
+        +uczniowie}
     - {browseable: 'yes', comment: pliki grupa_A, group: grupa_A, guest_ok: 'no', name: grupa_A,
       onwer: grupa_A, path: /home/prace/grupa_A, valid_users: +nauczyciele +grupa_A, write_list: +nauczyciele
         +grupa_A}

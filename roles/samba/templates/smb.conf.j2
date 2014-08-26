@@ -93,9 +93,12 @@
         local master = yes
         domain master = yes
         preferred master = yes
+        domain logons=yes
         wins support = yes
         wins proxy = yes
         #os level = 35
+        logon script=%G.bat
+
      add user script = /usr/sbin/adduser -m %u
      delete user script = /usr/sbin/userdel -r %u 
      add group script = /usr/sbin/groupadd  %g
@@ -120,7 +123,6 @@
 
       valid users = %S
       inherit acls = yes
-      inherit owner = yes
       inherit permissions = yes
       map acl inherit = yes
 
@@ -129,7 +131,7 @@
        path = /var/lib/samba/netlogon
        guest ok = yes
        read only = yes
-     directory security mask = 0755 
+     directory security mask = 0755
      browseable = no
 
     [profiles]
@@ -163,8 +165,6 @@
   directory mode       = 0770
   force directory mode = 0770
   inherit acls = yes
-  inherit owner = yes
-  inherit permissions = yes
   map acl inherit = yes
   {% if share.browseable is defined  %}
   browseable           = {{ share.browseable }}
