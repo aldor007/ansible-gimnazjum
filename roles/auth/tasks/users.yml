@@ -12,11 +12,13 @@
 
 - name: set acls for nauczyciele home user rwx default
   acl: name={{ item.home | default("/home/{{ item.name}}") }} entity=nauczyciele etype=group permissions=rwx state=present default=yes
+  with_items: users_to_add
   when: users_to_add is defined
   ignore_errors: yes
 
 - name: set acls for nauczyciele home user rwx not defaul
   acl: name={{item.home | default("/home/{{ item.name}}")}} entity=nauczyciele etype=group permissions=rwx state=present
+  with_items: users_to_add
   when: users_to_add is defined
   ignore_errors: yes
 

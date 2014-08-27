@@ -97,7 +97,7 @@
         wins support = yes
         wins proxy = yes
         #os level = 35
-        logon script=%g.bat
+        logon script=%U.bat
 
      add user script = /usr/sbin/adduser -m %u
      delete user script = /usr/sbin/userdel -r %u 
@@ -129,6 +129,7 @@
     [netlogon]
        comment = Domain Logon
        path = /var/lib/samba/netlogon
+        root preexec = /var/lib/samba/netlogon/prelogon.sh  '%m' '%U' '%a' '%g' '%L'
        guest ok = yes
        writable = no
      browseable = no
