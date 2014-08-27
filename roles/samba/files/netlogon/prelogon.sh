@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Generate logon script for windows (or dos)
 #
@@ -67,7 +67,6 @@ write "NET TIME \\\\$SERVER_NAME /set /yes"
 # write "NET USE /persistent:no"
 
 # mount the home share
-write "NET USE f: \\\\$SERVER_NAME\homes /yes"
 
 # command depend on client machine
 # case "$CLIENT_MACHINE" in
@@ -85,14 +84,13 @@ write "NET USE f: \\\\$SERVER_NAME\homes /yes"
 
 # mount depend on user
 if [ "$USER" = jan ] || [ "$USER" = ania]; then
-    write "net use y: \\\\SALA37\\prace /yes"
-    write "net use q: \\\\SALA37\\serwer_homes /yes"
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
 else
     write "NET USE z: \\\\$SERVER_NAME\\$GROUPNAME /yes"
 fi
 
 # mount depend on group
-write "NET USE x: \\\\$SERVER_NAME\\$GROUP /yes"
 
 
 # command depend on system type
@@ -108,9 +106,8 @@ write "NET USE x: \\\\$SERVER_NAME\\$GROUP /yes"
 # example : clients are named xxYYcZZ and printers xxYYpZZ
 # xx: building prefix, YY: classroom number, ZZ: identifier numbers
 # xxYY est the classroom
-CLASSROOM=`expr "$CLIENT_MACHINE" : '\(....\)'`
 
 # common share by classroom
-write "NET USE z: \\\\$SERVER_NAME\\informatyka /yes"
+write "NET USE k: \\\\$SERVER_NAME\\informatyka /yes"
 
 
