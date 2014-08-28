@@ -1,6 +1,6 @@
 #Ansible Samba PDC
 
-Ansible fore small newtwork, to configure PDC.
+Ansible for small network, to configure PDC.
 
 ## Usage
 
