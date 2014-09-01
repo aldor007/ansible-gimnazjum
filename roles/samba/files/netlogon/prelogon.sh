@@ -83,7 +83,7 @@ write "NET TIME \\\\$SERVER_NAME /set /yes"
 # esac
 
 # mount depend on user
-if [ "$USER" = jan ] || [ "$USER" = ania]; then
+if [ "$USER" = jan ] || [ "$USER" = ania ]; then
     write "net use y: \\\\$SERVER_NAME\\prace /yes"
     write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
 else

@@ -14,11 +14,13 @@ network_ether_interfaces:
 
 samba:
     name: 'sala37'
-    workgroup: 'gimnazjum'
+    workgroup: 'SALA37'
     comment: 'serwer sala37'
     domain: yes
     wins: yes
     group: smbshare
+    interfaces: 192.168.10.1 eth1
+    broadcast: 192.168.10.255/SALA37
     shares:
     - name: Informatyka
       read_only: 'yes'

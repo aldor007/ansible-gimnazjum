@@ -10,9 +10,9 @@
 
 # Name Resolution
 
-  os level         = 15    # Beat everything except NT/2000 servers.
-  #  local master     = yes */
- dns proxy = no
+  os level         = 255    # Beat everything except NT/2000 servers.
+  #  local master     = yes 
+ dns proxy = yes
 
   {% if samba.interfaces is defined %}
     interfaces           = {{ samba.interfaces }}
@@ -28,9 +28,10 @@
     domain master        = yes
     preferred master     = yes
     wins support         = yes
-    name resolve order   = wins hosts bcast
+    name resolve order = wins lmhosts hosts bcast
+
   {% else %}
-    name resolve order   = bcast hosts
+    name resolve order   =  hosts wins bcast
   {% endif %}
 
 # Logging
@@ -51,6 +52,7 @@
    passdb backend = tdbsam
 
    obey pam restrictions = yes
+  security = user
 
 # This boolean parameter controls whether Samba attempts to sync the Unix
 # password with the SMB password when the encrypted SMB password in the
@@ -81,6 +83,8 @@
   load printers = no
 
 # Shares
+   interfaces = 192.168.10.1 eth1
+   hosts allow =  192.168.10.
 
 # Domains
     {% if samba.domain is defined  %}
