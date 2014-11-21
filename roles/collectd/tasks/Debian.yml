@@ -1,0 +1,2 @@
+- name: install collectd
+  apt: pkg=collectd state=present  force=yes
