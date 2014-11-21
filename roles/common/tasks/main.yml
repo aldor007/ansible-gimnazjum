@@ -1,7 +1,7 @@
 ---
 # This role contains common plays that will run on all nodes.
 - name: install deps
-  apt: name={{ item }} state=present update_cache=yes default_release=wheezy
+  apt: name={{ item }} state=present update_cache=yes
   with_items:
    - python
    - python-dev

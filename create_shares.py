@@ -3,7 +3,7 @@ import string
 import os
 from passlib.hash import sha512_crypt
 
-GROUPS = 15
+GROUPS = 20
 
 allTheLetters = string.lowercase
 

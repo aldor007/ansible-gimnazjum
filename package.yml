@@ -12,8 +12,6 @@
   roles:
   - network
   - dhcpd
-  - auth
   - samba
-  - auth
   - collectd
 

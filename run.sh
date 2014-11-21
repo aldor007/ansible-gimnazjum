@@ -1,1 +1,1 @@
-ansible-playbook site.yml -i hosts  -u root -f 40 -k
+ansible-playbook site.yml -i hosts  -u ansible  -f 40 -k -s 
