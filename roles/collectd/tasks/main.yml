@@ -25,7 +25,8 @@
 - name: start collectd
   service: name=collectd state=started enabled=yes
 
-
+- name: copy web
+  copy: src=files/collectweb.conf dest=/etc/supervisor/conf.d/collectweb.conf
 # - name: copy configuration files
 #   template: src={{ item }}.conf.j2 dest={{ plugin_conf_dir }}/{{ item }}.conf
 #   notify: restart {{ service_name }}

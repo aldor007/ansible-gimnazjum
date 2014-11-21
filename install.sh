@@ -7,14 +7,24 @@ apt-get install sshpass -y
 apt-get install python-pip
 apt-get install python-yaml
 
-apt-get install libcgi-pm-perl
-apt-get install rrdtool
-apt-get install librrds-perl
-cpan JSON
 
-mkdir -p /var/www/collect/
-cd /var/www; wget https://github.com/downloads/httpdss/collectd-web/collectd-web_0.4.0.tar.gz; tar -zxvf collectd-web_0.4.0.tar.gz
+
+
+
+apt-get install libxml2-dev libxslt1-dev
+apt-get install python-rrdtool
+apt-get install glib2.0  libpango
+apt-get install libglib2.0-dev  libpango
+apt-get install libglib2.0-dev  
+apt-get install  libpango-perl
+apt-get install  libpangocairo-1.0-0
+apt-get install   libcairo2-dev
+apt-get install   libcairo2-dev -y
+apt-get install   libpango1.0-dev
+apt-get install librrd-dev
+
 
 pip install ansible
 pip install passlib
+pip install sickmuse
 
