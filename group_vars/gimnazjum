@@ -14,7 +14,7 @@ network_ether_interfaces:
 
 samba:
     name: 'sala37'
-    workgroup: 'SALA37'
+    workgroup: 'ASTERIX'
     comment: 'serwer sala37'
     domain: yes
     wins: yes
