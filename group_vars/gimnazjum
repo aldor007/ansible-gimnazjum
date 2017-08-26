@@ -1,9 +1,9 @@
 ---
 network_ether_interfaces:
-    - device: eth0
+    - device: enp2s0
       type: ethernet
       bootproto: dhcp
-    - device: eth1
+    - device: enp4s0
       type: ethernet
       bootproto: static
       hostname: serwer
@@ -19,7 +19,7 @@ samba:
     domain: yes
     wins: yes
     group: smbshare
-    interfaces: 192.168.10.1 eth1
+    interfaces: 192.168.10.1 enp4s0
     broadcast: 192.168.10.255/SALA37
     shares:
     - name: Informatyka

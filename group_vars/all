@@ -3,3 +3,4 @@
 
 httpd_port: 80
 ntpserver: 0.pl.pool.ntp.org
+network_msq: enp2s0

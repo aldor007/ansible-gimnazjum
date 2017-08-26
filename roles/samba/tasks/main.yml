@@ -15,11 +15,11 @@
 #
 - name: ensure smbpassword is set
   raw:  (echo {{ item.smbpassword }}; echo {{ item.smbpassword }}) | smbpasswd -s -a {{ item.name }}
-  with_items: users_to_add
+  with_items: "{{users_to_add }}"
   tags: samba
 - name: samba share folders
   file: path="{{ item.path }}" state=directory mode=0770 owner={{ item.owner | default('nobody') }} group={{ item.group | default('nogroup')}}
-  with_items: samba.shares
+  with_items: "{{ samba.shares }}"
   tags: samba
   ignore_errors: yes
 
@@ -53,7 +53,7 @@
 - sysctl: name="net.ipv4.ip_forward" value=1 sysctl_set=yes state=present reload=yes
 
 - name: update rc.local, set iptables
-  copy: src=rc.local dest=/etc/rc.local
+  template: src=rc.local dest=/etc/rc.local mode=0755
 
 - name: run rc.local
   raw: /etc/rc.local

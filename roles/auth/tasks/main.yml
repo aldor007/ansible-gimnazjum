@@ -4,36 +4,40 @@
 - include: users.yml
 
 - name: set acls for nauczyciele
-  acl: name=/home/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present default=yes
-  with_items: groups_to_add
+  acl: name={{ item.home | default("/home/{{ item.name }}") }} entity=nauczyciele etype=group permissions=rwx state=present default=yes
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
+
+- name: Create prace folders
+  file: path="/home/prace/{{ item.name }}" state=directory mode=2750 owner=nobody group={{ item.name | default('nogroup')}}
+  with_items: "{{ groups_to_add }}"
 
 - name: set acls for grups prace
   acl: name=/home/prace/{{ item.name}} entity={{ item.name }} etype=group permissions=rwx state=present
-  with_items: groups_to_add
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
 
 - name: set acls for grups prace only x
   acl: name=/home/prace/{{ item.name}}  etype=group  permissions=x state=present default=yes
-  with_items: groups_to_add
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
 
 - name: set acls for nauczyciele prace rwx default
   acl: name=/home/prace/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present default=yes
-  with_items: groups_to_add
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
 
 - name: set acls for nauczyciele prace rwx not defaul
   acl: name=/home/prace/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present
-  with_items: groups_to_add
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
 
 - name: set acls for nauczyciele home rwx default
-  acl: name=/home/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present default=yes
-  with_items: groups_to_add
+  acl: name={{ item.home | default("/home/{{ item.name}}") }} entity=nauczyciele etype=group permissions=rwx state=present default=yes
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
 
 - name: set acls for nauczyciele home rwx not defaul
-  acl: name=/home/{{ item.name}} entity=nauczyciele etype=group permissions=rwx state=present
-  with_items: groups_to_add
+  acl: name={{ item.home | default("/home/{{ item.name}}") }} entity=nauczyciele etype=group permissions=rwx state=present
+  with_items: "{{ groups_to_add }}"
   ignore_errors: yes
