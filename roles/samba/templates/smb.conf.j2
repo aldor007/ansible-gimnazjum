@@ -34,6 +34,10 @@
     name resolve order   =  hosts wins bcast
   {% endif %}
 
+    # handle Windows XP
+    server max protocol = NT1
+    lanman auth = yes
+    ntlm auth = yes
 # Logging
 
   log file = /var/log/samba.log
