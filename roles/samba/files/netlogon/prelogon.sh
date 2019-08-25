@@ -19,7 +19,7 @@ exec 2>>"$SAMBA_DIR/logon_script.err"
 #exec 2>>"$SAMBA_DIR/var/logon_script.$1.err"
 
 # if you need SHELL DEBUG, in the errors messages file, uncomment :
-#set -x
+# set -x
 
 #--------------------------- FUNCTIONS ---------------------------------------- 
 # end of line in windows world : CR+NL
@@ -83,12 +83,59 @@ write "NET TIME \\\\$SERVER_NAME /set /yes"
 # esac
 
 # mount depend on user
-if [ "$USER" = jan ] || [ "$USER" = ania ]; then
+if [ $USER = jan ]; then
     write "net use y: \\\\$SERVER_NAME\\prace /yes"
     write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
-else
-    write "NET USE z: \\\\$SERVER_NAME\\$GROUPNAME /yes"
 fi
+
+if [ $USER = nauczyciel01 ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel02 ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel03 ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+
+if [ $USER = nauczyciel04  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel05  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel06  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel07  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel08  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+if [ $USER = nauczyciel09  ]; then
+    write "net use y: \\\\$SERVER_NAME\\prace /yes"
+    write "net use q: \\\\$SERVER_NAME\\serwer_homes /yes"
+fi
+
+
+write "NET USE z: \\\\$SERVER_NAME\\$GROUPNAME /yes"
 
 # mount depend on group
 

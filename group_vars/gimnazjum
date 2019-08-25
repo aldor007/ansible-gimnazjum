@@ -10,7 +10,7 @@ network_ether_interfaces:
       address: 192.168.10.1
       netmask: 255.255.255.0
       broadcast: 192.168.10.255
-      gateway: 192.168.0.1
+      gateway: 192.168.25.1
 
 samba:
     name: 'sala37'
