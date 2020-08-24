@@ -27,6 +27,6 @@ apt-get install acl -y
 pip install ansible
 pip install passlib
 pip install sickmuse
-adduser ansible
+useradd ansible
 usermod -aG sudo ansible
 

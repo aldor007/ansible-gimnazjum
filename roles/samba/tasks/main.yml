@@ -1,7 +1,7 @@
 ---
 
 - name: samba is installed
-  apt:  pkg=samba state=installed
+  apt:  pkg=samba state=present
   tags: samba
 
 - name: fileserver prace

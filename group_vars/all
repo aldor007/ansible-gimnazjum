@@ -4,3 +4,4 @@
 httpd_port: 80
 ntpserver: 0.pl.pool.ntp.org
 network_msq: enp2s0
+dhcp_iface: enp4s0

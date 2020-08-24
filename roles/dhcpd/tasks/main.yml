@@ -2,6 +2,9 @@
 - name: dhcpd
   template: src=dhcpd.conf.j2 dest=/etc/dhcp/dhcpd.conf owner=root group=root mode=0644
 
+- name: dhcpd-default
+  template: src=isc-dhcp-server.j2 dest=/etc/default/isc-dhcp-server owner=root group=root mode=0644
+
 - name: install dhcp-server
   apt: name=isc-dhcp-server state=present
 

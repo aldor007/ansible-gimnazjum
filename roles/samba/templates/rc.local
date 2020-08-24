@@ -11,5 +11,6 @@
 #
 # By default this script does nothing.
 iptables -t nat -A POSTROUTING -o {{ network_msq }} -j MASQUERADE
-/etc/init.d/samba restart
+service smbd restart
+service nmbd restart
 exit 0
