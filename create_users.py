@@ -13,7 +13,7 @@ users = []
 groupa_base = 'grupa'
 for i in range(0, GROUPS):
     tmp = {}
-    tmp['name'] = '_'.join((groupa_base, allTheLetters[i].upper()))
+    tmp['name'] = '_'.join((groupa_base, allTheLetters[i]))
     tmp['home'] = os.path.join('/home/uczniowie', tmp['name'])
     groups.append(tmp)
 
@@ -63,7 +63,7 @@ for group in groups:
         if i < 10:
             number = '0' + str(number)
         user['name'] = ''.join((group['name'], str(number)))
-        user['update_password'] = False
+        user['update_password'] = True
         user['smbpassword'] = 'gimnazjum'
         user['groups'] = []
         user['groups'].append(group['name'])

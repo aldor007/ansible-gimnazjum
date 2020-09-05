@@ -28,14 +28,13 @@
     domain master        = yes
     preferred master     = yes
     wins support         = yes
-    name resolve order = wins lmhosts hosts bcast
+    name resolve order = wins bcast
 
   {% else %}
-    name resolve order   =  hosts wins bcast
+    name resolve order   =  wins bcast
   {% endif %}
 
     # handle Windows XP
-    server max protocol = NT1
     lanman auth = yes
     ntlm auth = yes
 # Logging
@@ -129,7 +128,7 @@
      add machine script  = /usr/sbin/useradd -s /bin/false -d /var/lib/nobody %u
     #======================= Share Definitions =======================
 
-    [homes]
+[homes]
        comment = Home Directories
        browseable = yes
 

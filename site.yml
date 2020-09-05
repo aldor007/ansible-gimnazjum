@@ -9,9 +9,9 @@
 
 - hosts: gimnazjum
   roles:
-          # - network
+  - network
   - dhcpd
-          #- auth
+  - auth
   - samba
-    #- auth
+  - auth
 
