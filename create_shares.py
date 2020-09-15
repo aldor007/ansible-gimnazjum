@@ -12,7 +12,7 @@ groups = []
 groupa_base = 'grupa'
 for i in range(0, GROUPS):
     tmp = {}
-    tmp['name'] = '_'.join((groupa_base, allTheLetters[i].upper()))
+    tmp['name'] = '_'.join((groupa_base, allTheLetters[i]))
     groups.append(tmp)
 
 

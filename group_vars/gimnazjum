@@ -34,65 +34,183 @@ samba:
 #      onwer: nauczyciele, path: /home/, valid_users: +nauczyciele,  write_list: +nauczyciele}
     - {browseable: 'yes', comment: prace, group: uczniowie, guest_ok: 'no', name: prace,
       onwer: uczniowie, path: /home/prace, valid_users: +nauczyciele +uczniowie, write_list: +nauczyciele
-        +uczniowie}
-    - {browseable: 'yes', comment: pliki grupa_A, group: grupa_A, guest_ok: 'no', name: grupa_A,
-      onwer: grupa_A, path: /home/prace/grupa_A, valid_users: +nauczyciele +grupa_A, write_list: +nauczyciele
-        +grupa_A}
-    - {browseable: 'yes', comment: pliki grupa_B, group: grupa_B, guest_ok: 'no', name: grupa_B,
-      onwer: grupa_B, path: /home/prace/grupa_B, valid_users: +nauczyciele +grupa_B, write_list: +nauczyciele
-        +grupa_B}
-    - {browseable: 'yes', comment: pliki grupa_C, group: grupa_C, guest_ok: 'no', name: grupa_C,
-      onwer: grupa_C, path: /home/prace/grupa_C, valid_users: +nauczyciele +grupa_C, write_list: +nauczyciele
-        +grupa_C}
-    - {browseable: 'yes', comment: pliki grupa_D, group: grupa_D, guest_ok: 'no', name: grupa_D,
-      onwer: grupa_D, path: /home/prace/grupa_D, valid_users: +nauczyciele +grupa_D, write_list: +nauczyciele
-        +grupa_D}
-    - {browseable: 'yes', comment: pliki grupa_E, group: grupa_E, guest_ok: 'no', name: grupa_E,
-      onwer: grupa_E, path: /home/prace/grupa_E, valid_users: +nauczyciele +grupa_E, write_list: +nauczyciele
-        +grupa_E}
-    - {browseable: 'yes', comment: pliki grupa_F, group: grupa_F, guest_ok: 'no', name: grupa_F,
-      onwer: grupa_F, path: /home/prace/grupa_F, valid_users: +nauczyciele +grupa_F, write_list: +nauczyciele
-        +grupa_F}
-    - {browseable: 'yes', comment: pliki grupa_G, group: grupa_G, guest_ok: 'no', name: grupa_G,
-      onwer: grupa_G, path: /home/prace/grupa_G, valid_users: +nauczyciele +grupa_G, write_list: +nauczyciele
-        +grupa_G}
-    - {browseable: 'yes', comment: pliki grupa_H, group: grupa_H, guest_ok: 'no', name: grupa_H,
-      onwer: grupa_H, path: /home/prace/grupa_H, valid_users: +nauczyciele +grupa_H, write_list: +nauczyciele
-        +grupa_H}
-    - {browseable: 'yes', comment: pliki grupa_I, group: grupa_I, guest_ok: 'no', name: grupa_I,
-      onwer: grupa_I, path: /home/prace/grupa_I, valid_users: +nauczyciele +grupa_I, write_list: +nauczyciele
-        +grupa_I}
-    - {browseable: 'yes', comment: pliki grupa_J, group: grupa_J, guest_ok: 'no', name: grupa_J,
-      onwer: grupa_J, path: /home/prace/grupa_J, valid_users: +nauczyciele +grupa_J, write_list: +nauczyciele
-        +grupa_J}
-    - {browseable: 'yes', comment: pliki grupa_K, group: grupa_K, guest_ok: 'no', name: grupa_K,
-      onwer: grupa_K, path: /home/prace/grupa_K, valid_users: +nauczyciele +grupa_K, write_list: +nauczyciele
-        +grupa_K}
-    - {browseable: 'yes', comment: pliki grupa_L, group: grupa_L, guest_ok: 'no', name: grupa_L,
-      onwer: grupa_L, path: /home/prace/grupa_L, valid_users: +nauczyciele +grupa_L, write_list: +nauczyciele
-        +grupa_L}
-    - {browseable: 'yes', comment: pliki grupa_M, group: grupa_M, guest_ok: 'no', name: grupa_M,
-      onwer: grupa_M, path: /home/prace/grupa_M, valid_users: +nauczyciele +grupa_M, write_list: +nauczyciele
-        +grupa_M}
-    - {browseable: 'yes', comment: pliki grupa_N, group: grupa_N, guest_ok: 'no', name: grupa_N,
-      onwer: grupa_N, path: /home/prace/grupa_N, valid_users: +nauczyciele +grupa_N, write_list: +nauczyciele
-        +grupa_N}
-    - {browseable: 'yes', comment: pliki grupa_O, group: grupa_O, guest_ok: 'no', name: grupa_O,
-      onwer: grupa_O, path: /home/prace/grupa_O, valid_users: +nauczyciele +grupa_O, write_list: +nauczyciele
-        +grupa_O}
-    - {browseable: 'yes', comment: pliki grupa_P, group: grupa_P, guest_ok: 'no', name: grupa_P,
-      onwer: grupa_P, path: /home/prace/grupa_P, valid_users: +nauczyciele +grupa_P, write_list: +nauczyciele
-        +grupa_P}
-    - {browseable: 'yes', comment: pliki grupa_Q, group: grupa_Q, guest_ok: 'no', name: grupa_Q,
-      onwer: grupa_Q, path: /home/prace/grupa_Q, valid_users: +nauczyciele +grupa_Q, write_list: +nauczyciele
-        +grupa_Q}
-    - {browseable: 'yes', comment: pliki grupa_R, group: grupa_R, guest_ok: 'no', name: grupa_R,
-      onwer: grupa_R, path: /home/prace/grupa_R, valid_users: +nauczyciele +grupa_R, write_list: +nauczyciele
-        +grupa_R}
-    - {browseable: 'yes', comment: pliki grupa_S, group: grupa_S, guest_ok: 'no', name: grupa_S,
-      onwer: grupa_S, path: /home/prace/grupa_S, valid_users: +nauczyciele +grupa_S, write_list: +nauczyciele
-        +grupa_S}
-    - {browseable: 'yes', comment: pliki grupa_T, group: grupa_T, guest_ok: 'no', name: grupa_T,
-      onwer: grupa_T, path: /home/prace/grupa_T, valid_users: +nauczyciele +grupa_T, write_list: +nauczyciele
-        +grupa_T}
-
+    - browseable: 'yes'
+      comment: pliki grupa_a
+      group: grupa_a
+      guest_ok: 'no'
+      name: grupa_a
+      onwer: grupa_a
+      path: /home/prace/grupa_a
+      valid_users: +nauczyciele +grupa_a
+      write_list: +nauczyciele +grupa_a
+    - browseable: 'yes'
+      comment: pliki grupa_b
+      group: grupa_b
+      guest_ok: 'no'
+      name: grupa_b
+      onwer: grupa_b
+      path: /home/prace/grupa_b
+      valid_users: +nauczyciele +grupa_b
+      write_list: +nauczyciele +grupa_b
+    - browseable: 'yes'
+      comment: pliki grupa_c
+      group: grupa_c
+      guest_ok: 'no'
+      name: grupa_c
+      onwer: grupa_c
+      path: /home/prace/grupa_c
+      valid_users: +nauczyciele +grupa_c
+      write_list: +nauczyciele +grupa_c
+    - browseable: 'yes'
+      comment: pliki grupa_d
+      group: grupa_d
+      guest_ok: 'no'
+      name: grupa_d
+      onwer: grupa_d
+      path: /home/prace/grupa_d
+      valid_users: +nauczyciele +grupa_d
+      write_list: +nauczyciele +grupa_d
+    - browseable: 'yes'
+      comment: pliki grupa_e
+      group: grupa_e
+      guest_ok: 'no'
+      name: grupa_e
+      onwer: grupa_e
+      path: /home/prace/grupa_e
+      valid_users: +nauczyciele +grupa_e
+      write_list: +nauczyciele +grupa_e
+    - browseable: 'yes'
+      comment: pliki grupa_f
+      group: grupa_f
+      guest_ok: 'no'
+      name: grupa_f
+      onwer: grupa_f
+      path: /home/prace/grupa_f
+      valid_users: +nauczyciele +grupa_f
+      write_list: +nauczyciele +grupa_f
+    - browseable: 'yes'
+      comment: pliki grupa_g
+      group: grupa_g
+      guest_ok: 'no'
+      name: grupa_g
+      onwer: grupa_g
+      path: /home/prace/grupa_g
+      valid_users: +nauczyciele +grupa_g
+      write_list: +nauczyciele +grupa_g
+    - browseable: 'yes'
+      comment: pliki grupa_h
+      group: grupa_h
+      guest_ok: 'no'
+      name: grupa_h
+      onwer: grupa_h
+      path: /home/prace/grupa_h
+      valid_users: +nauczyciele +grupa_h
+      write_list: +nauczyciele +grupa_h
+    - browseable: 'yes'
+      comment: pliki grupa_i
+      group: grupa_i
+      guest_ok: 'no'
+      name: grupa_i
+      onwer: grupa_i
+      path: /home/prace/grupa_i
+      valid_users: +nauczyciele +grupa_i
+      write_list: +nauczyciele +grupa_i
+    - browseable: 'yes'
+      comment: pliki grupa_j
+      group: grupa_j
+      guest_ok: 'no'
+      name: grupa_j
+      onwer: grupa_j
+      path: /home/prace/grupa_j
+      valid_users: +nauczyciele +grupa_j
+      write_list: +nauczyciele +grupa_j
+    - browseable: 'yes'
+      comment: pliki grupa_k
+      group: grupa_k
+      guest_ok: 'no'
+      name: grupa_k
+      onwer: grupa_k
+      path: /home/prace/grupa_k
+      valid_users: +nauczyciele +grupa_k
+      write_list: +nauczyciele +grupa_k
+    - browseable: 'yes'
+      comment: pliki grupa_l
+      group: grupa_l
+      guest_ok: 'no'
+      name: grupa_l
+      onwer: grupa_l
+      path: /home/prace/grupa_l
+      valid_users: +nauczyciele +grupa_l
+      write_list: +nauczyciele +grupa_l
+    - browseable: 'yes'
+      comment: pliki grupa_m
+      group: grupa_m
+      guest_ok: 'no'
+      name: grupa_m
+      onwer: grupa_m
+      path: /home/prace/grupa_m
+      valid_users: +nauczyciele +grupa_m
+      write_list: +nauczyciele +grupa_m
+    - browseable: 'yes'
+      comment: pliki grupa_n
+      group: grupa_n
+      guest_ok: 'no'
+      name: grupa_n
+      onwer: grupa_n
+      path: /home/prace/grupa_n
+      valid_users: +nauczyciele +grupa_n
+      write_list: +nauczyciele +grupa_n
+    - browseable: 'yes'
+      comment: pliki grupa_o
+      group: grupa_o
+      guest_ok: 'no'
+      name: grupa_o
+      onwer: grupa_o
+      path: /home/prace/grupa_o
+      valid_users: +nauczyciele +grupa_o
+      write_list: +nauczyciele +grupa_o
+    - browseable: 'yes'
+      comment: pliki grupa_p
+      group: grupa_p
+      guest_ok: 'no'
+      name: grupa_p
+      onwer: grupa_p
+      path: /home/prace/grupa_p
+      valid_users: +nauczyciele +grupa_p
+      write_list: +nauczyciele +grupa_p
+    - browseable: 'yes'
+      comment: pliki grupa_q
+      group: grupa_q
+      guest_ok: 'no'
+      name: grupa_q
+      onwer: grupa_q
+      path: /home/prace/grupa_q
+      valid_users: +nauczyciele +grupa_q
+      write_list: +nauczyciele +grupa_q
+    - browseable: 'yes'
+      comment: pliki grupa_r
+      group: grupa_r
+      guest_ok: 'no'
+      name: grupa_r
+      onwer: grupa_r
+      path: /home/prace/grupa_r
+      valid_users: +nauczyciele +grupa_r
+      write_list: +nauczyciele +grupa_r
+    - browseable: 'yes'
+      comment: pliki grupa_s
+      group: grupa_s
+      guest_ok: 'no'
+      name: grupa_s
+      onwer: grupa_s
+      path: /home/prace/grupa_s
+      valid_users: +nauczyciele +grupa_s
+      write_list: +nauczyciele +grupa_s
+    - browseable: 'yes'
+      comment: pliki grupa_t
+      group: grupa_t
+      guest_ok: 'no'
+      name: grupa_t
+      onwer: grupa_t
+      path: /home/prace/grupa_t
+      valid_users: +nauczyciele +grupa_t
+      write_list: +nauczyciele +grupa_t
