@@ -1,9 +1,9 @@
 ---
 network_ether_interfaces:
-    - device: enp2s0
+    - device: enp2s7 
       type: ethernet
       bootproto: dhcp
-    - device: enp4s0
+    - device: enp1s0  
       type: ethernet
       bootproto: static
       hostname: serwer
@@ -33,7 +33,7 @@ samba:
 #    - {browseable: 'yes', comment: serwer_homes, group: uczniowie, guest_ok: 'no', name: serwer_homes,
 #      onwer: nauczyciele, path: /home/, valid_users: +nauczyciele,  write_list: +nauczyciele}
     - {browseable: 'yes', comment: prace, group: uczniowie, guest_ok: 'no', name: prace,
-      onwer: uczniowie, path: /home/prace, valid_users: +nauczyciele +uczniowie, write_list: +nauczyciele
+      onwer: uczniowie, path: /home/prace, valid_users: +nauczyciele +uczniowie, write_list: +nauczyciele}
     - browseable: 'yes'
       comment: pliki grupa_a
       group: grupa_a
